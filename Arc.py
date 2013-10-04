@@ -125,7 +125,7 @@ class ViewProviderArc:
 	def updateData(self, fp, prop):
 		"If a property of the handled feature has changed we have the chance to handle this here"
 		# fp is the handled feature, prop is the name of the property that has changed
-		if prop == "StartPoint" or prop == "EndPoint" or prop == "CenterPoint" or prop == "CWRotation"
+		if prop == "StartPoint" or prop == "EndPoint" or prop == "CenterPoint" or prop == "CWRotation":
 			sp = fp.getPropertyByName("StartPoint")		
 			ep = fp.getPropertyByName("EndPoint")		
 			cp = fp.getPropertyByName("CenterPoint")
